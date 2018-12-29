@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Privacy Policy</title>
+	<meta name="keywords" content="Privacy Policy">
+    <meta name="description" content="Privacy Policy">
+    <meta property="og:type" content="webpage">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Privacy Policy">
+    <meta property="og:description" content="Privacy Policy">
+    <meta name="apple-mobile-web-app-title" content="Privacy Policy">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no minimal-ui">   
+    <link rel="stylesheet" href="css/header_include.min.css">
+    <link rel="stylesheet" href="css/appview.css">
+    <link rel="stylesheet" href="css/viewcolorful.css">
+  <script src="js/jquery.js"></script>
+<script type="text/javascript">
+function mobile_provision(){
+	document.getElementById('actions').innerHTML = '<div class="spinner"><div>安装完成后点击立即信任，手动信任APP</div><div class="loading"></div><a href="/static/app/embedded.mobileprovision" onclick="install_app()" class="btn-u btn-u-lg ">一键跳转，立即信任</a></div>';
+}
+
+function install_app(_link){
+	if(!/Windows|Android/gi.test(navigator.userAgent.toLowerCase())){
+    		document.getElementById('actions').innerHTML = '<div class="spinner"><div>正在安装，请按 Home 键在桌面查看</div><div class="loading"></div><a href="/static/app/embedded.mobileprovision" onclick="install_app()" class="btn-u btn-u-lg ">安装中，请稍后</a></div>';
+    		setTimeout("mobile_provision()", 6000);
+	}
+	location.href = _link;
+}
+
+function install_ing(_link){
+        location.href = _link;
+        $(".text-bar")[0].innerHTML = "安装中";
+        $(".change").show();
+        $(".text-bar").attr("disabled", "true");
+        $(".top-bar").css("width", "0.1%");
+        timer = setTimeout(function() {
+                $(".top-bar").css("width", "0.1%").animate({
+                        width:"20%"
+                }, 1e3, function() {
+                        $("#mq1").hide();
+                        $(".device").show();
+                        var mySwiper = new Swiper(".swiper-container1", {
+                                nextButton:".next_btn",
+                                autoplay:3e3,
+                                autoplayStopOnLast:true
+                        });
+                        $(".top-bar").css("width", "20%").animate({
+                                width:"100%"
+                        }, 15e3, function() {
+                                $(".text-bar")[0].innerHTML = "立即信任";
+                                $(".text-bar").removeAttr("disabled");
+                                $(".text-bar").attr("href", "/static/app/embedded.mobileprovision");
+                        });
+                });
+        }, 1e3);
+}
+</script>
+    <style>
+      /*微信打开*/
+img{max-width: 100%; height: auto;}
+.weixin{display: none;position: fixed; left:0; top:0; bottom:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80);  height: 100%; width: 100%; z-index: 300;}
+.weixin p{text-align: center; margin-top: 20%; padding:0 5%;}
+.usage-time-1{color: #f60; padding-top: 4px;text-align: center;font-size: 12px;overflow: hidden;}
+    table.app_view_history td{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    </style>
+
+
+	
+  <script>
+ function browserRedirect() {
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+     if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM ){
+                              <!-- 苹果端 -->
+    } else {
+        <!-- window.location.href="index.html";   安卓端 -->
+    }
+}
+    browserRedirect();  <!--  加这个，默认不点击、打开网页就执行了  -->
+</script>	
+	
+	
+	
+
+</head><body style="background-color:#F4F8F9">
+<div class="row-fluid  margin-bottom-20" style="z-index:-2;">
+    <div id="header"></div>
+</div>
+
+
+<!--=== Content Part ===-->
+<div class="container content" style="padding-bottom: 0px;">
+    <div class="view row">
+        
+        <div class="span12" style="text-align:center;padding-top:10px;margin-top:-100px;">
+            <h2 style="color:#FF9500;font-size:36px;margin-bottom: 10px;"> Privacy Policy </h2>
+<!--            <span class="label label-danger signature-label signature_in_house " style="margin-top:-40px; background-color:#FF2D55;"> iOS 企业版iOS 企业版iOS 企业版iOS 企业版iOS 企业版iOS 企业版iOS 企业版iOS 企业版iOS 企业版iOS 企业版iOS 企业版 </span>-->
+        </div>
+
+        
+        <div class="span12 gray-text " style="text-align:left;">
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-bottom:16px;padding-bottom:0px;">
+                <li style="font-size:17px;color:#131313;">This Privacy Policy describes our privacy data related policies, please read them carefully. </li>
+            </ul>
+            
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-bottom:0px;padding-bottom:0px;">
+                <li style="font-size:18px;color:#131313;">1. Personal information</li>
+            </ul>
+            
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-top:0px;">
+                <li class="" style="font-size:16px;margin-bottom: 0px">
+                    Personal information is data that can be used to uniquely identify or contact someone. To protect your privacy, the app does not require registration and you do not need to provide any personal information, so we do not obtain and store your personal information.
+                </li>
+                
+            </ul>
+        
+            
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-bottom:0px;padding-bottom:0px;">
+                <li style="font-size:18px;color:#131313;">2. Collection of data</li>
+            </ul>
+            
+            
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-top:0px;">
+                <li class="" style="font-size:16px;margin-bottom: 0px">
+                    When you use the app, the app will receive and record your phone information, including but not limited to: device type, network type, language of use, date and time of access, and other hardware and software features. </br></br>
+                    Collecting these personally unrelated data is to provide you with a better service. For example, when you are using cellular data, we will compress the data back, avoiding duplicate access based on the date and time of the visit, to save your mobile data consumption; show you the description of the language you are using, etc. according to your language.
+                </li>
+            </ul>
+            
+            
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-bottom:0px;padding-bottom:0px;">
+                <li style="font-size:18px;color:#131313;">3. Data retention and deletion</li>
+            </ul>
+            
+            
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-top:0px;">
+                <li class="" style="font-size:16px;margin-bottom: 0px">
+                    The data remains in the App and will not be stored on the server. Once you delete the app, this information will also be deleted.
+                </li>
+            </ul>
+        
+            
+            
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-bottom:0px;padding-bottom:0px;">
+                <li style="font-size:18px;color:#131313;">4. Use of SMS</li>
+            </ul>
+            
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-top:0px;">
+                <li class="" style="font-size:16px;margin-bottom: 0px">
+                    The text message viewed using the number provided by the app is synchronized with the server. Based on privacy and security, we will partially hide the message sender's information. For example: Sender "1234567890" will be displayed as "123 *** 7890" or nickname, but the SMS content is consistent. In addition, you can only get the latest top 100 records forever. </br></br>
+                    When using the service, you should abide by local laws and regulations, and you cannot use this service for illegal activities, infringement of privacy, defamatory or rumor.
+                </li>
+            </ul>
+            
+            
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-bottom:0px;padding-bottom:0px;">
+                <li style="font-size:18px;color:#131313;">5. Disclaimer</li>
+            </ul>
+            
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-top:0px;">
+                <li class="" style="font-size:16px;margin-bottom: 0px">
+                    When you use the number provided by the App, you know and agree to the following: </br></br>
+                    App The phone number provided is not a private number, and everyone can use these numbers and view the corresponding SMS content. You will never use these phone numbers to receive important content, including but not limited to: meeting notices, itineraries, appointments, and other important personal information. </br></br>
+                    Use the phone number provided by the app to verify or register a third-party service for the purpose of preventing harassment, one-time verification, short-term verification, etc. For example, some websites require you to register before you can watch 1080P video. Care should be taken to protect personal information and avoid entering personal information in these accounts. Others can modify/retrieve account passwords through this phone number. At the same time, the service agreement of the third party service provider should be observed. </br></br>
+                    You will never associate a private account with the phone number provided by the app (ie, you can log in to a private account via phone number and SMS verification code). </br></br>
+                    The economic dispute or information disclosure caused by the above content has exceeded the scope of the App's responsibility, and the loss should be borne by you.
+                </li>
+            </ul>
+        
+            
+            
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-bottom:0px;padding-bottom:0px;">
+                <li style="font-size:18px;color:#131313;">6. Revision of the Privacy Policy</li>
+            </ul>
+            
+            <ul class="breadcrumb " style="margin-left:16px;margin-right:16px;margin-top:0px;margin-bottom: 44px">
+                <li class="" style="font-size:16px;margin-bottom: 0px">
+                    We reserve the right to modify this policy at any time. If the policy changes, you will receive a prompt in the App and you will need to re-agreed.
+                </li>
+            </ul>
+            
+            
+            
+            
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- 微信QQ验证-->
+<div class="weixin"><p><img src="picture/1000_1231480.png" alt="微信打开"></p></div>
+<!-- xinren -->
+<div class="modal fade addmodel" id="inhouseTip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4>"未受信任的企业级开发者"的解决办法</h4>
+            </div>
+            <div class="modal-body" style="background:#f2f2f2;height:600px;overflow-y: scroll;">
+                <section>
+                    <div style="padding:0 20px 20px;color:#333;">
+                    <p>因苹果公司的政策原因，在iOS系统中首次安装企业版应用时会出现"未受信任的企业级开发者"提示</p>
+                    </div>
+                    <div style="padding:0 10px 20px;">
+                        <img class="img-responsive center-block mt-20 mb-20" src="picture/resovelFlow1_cn.png" style="width:80%;">
+                        <br>
+                      <h4 class="font-16">解决办法如下（以iOS11系统为例）：</h4>
+                        <li style="list-style:none;color:#333;">1、在手机中打开设置功能，选择"通用"</li>
+                        <img class="img-responsive center-block mt-20 mb-20" src="picture/resovelFlow2_cn.png" style="width:80%;">
+                        <li style="list-style:none;color:#333;">2、在通用中，选择"描述文件与设备管理"功能</li>
+                        <img class="img-responsive center-block mt-20 mb-20" src="picture/resovelFlow3_cn.png" style="width:80%;">
+                        <li style="list-style:none;color:#333;">3、在描述文件与设备管理中的企业级应用分类中，选择要安装的企业应用的文件名称（与打开时的提示一致），点击进入</li>
+                        <img class="img-responsive center-block mt-20 mb-20" src="picture/resovelFlow4_cn.png" style="width:80%;">
+                        <li style="list-style:none;color:#333;">4、进入企业签名页面后，确认企业签名中的公司名称与应用名称后，点击信任"企业签名公司名称"</li>
+                        <img class="img-responsive center-block mt-20 mb-20" src="picture/resovelFlow5_cn.png" style="width:80%;">
+                        <img class="img-responsive center-block mt-20 mb-20" src="picture/resovelFlow6_cn.png" style="width:80%;">
+                        <li style="list-style:none;color:#333;">5、回到桌面，重新打开应用即可使用</li>
+                        <a href="itms-services://?action=download-manifest&url=https://gnh.oimai.cn/gnh.plist" class="btn btn-u btn-u btn-u-default">一键跳转，立即信任</a>
+                        <br>
+                    </div>
+                </section>
+            </div>
+            <div class="modal-footer" style="margin-top:0px">
+                <a data-dismiss="modal" href="javascript:void(0)" class="btn btn-u btn-u btn-u-default" id="cancle">关闭</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/app_view.min.js"></script>
+<script>
+$(document).ready(function() {
+    App.init();
+    $('#reportClick').click(function () {
+        ajaxLoadReportModal();
+    });
+
+    $('#inhouseClick').click(function () {
+        $("#inhouseTip").modal('show');
+    });
+
+    $('#form').submit(function() {
+        if ($('#password').val() == '') {
+            alert(appInstallPasswordAlert);
+            return false;
+        }
+
+        saveData();
+        return false;
+    });
+
+    initView();
+
+    $('.history_show_more').click(function() {
+        loadOtherApps();
+    });
+    $("#lastest-li .close-tips").on('click', function() {
+                                    $("#lastest-li").removeClass('hide').addClass('hide');
+                                    // 使fashion模板背景变小
+                                    $("div.view-fashion-mobile-body .app-info-mobile.mobile-app-content").css('background-size', 'auto 330px');
+                                    $(".view-fashion-app-info + .row.detail").css('margin-top', '20px');
+                                    $("div.view-fashion-body").css('background-size', 'auto 170px');
+                                    });
+});
+function is_weixin() {
+var ua = navigator.userAgent.toLowerCase();
+if(ua.match(/MicroMessenger/i) == "micromessenger") {
+$('.weixin').show();
+} else {
+}
+if(ua.match(/\sqq/i) == " qq"){
+$('.weixin').show();
+}else{
+}
+}
+<!--is_weixin();-->
+</script>
+<!-- xinren --> 
+
+
+
+
+
+</body></html>
